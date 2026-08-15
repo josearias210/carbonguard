@@ -24,7 +24,7 @@ RUN dotnet publish src/CarbonGuard.Api/CarbonGuard.Api.csproj \
     --no-restore \
     /p:UseAppHost=false
 
-FROM mcr.microsoft.com/dotnet/aspnet:8.0-alpine AS final
+FROM mcr.microsoft.com/dotnet/aspnet:10.0-alpine AS final
 WORKDIR /app
 
 ENV ASPNETCORE_HTTP_PORTS=8080 \
