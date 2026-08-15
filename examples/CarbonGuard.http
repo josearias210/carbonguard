@@ -1,0 +1,20 @@
+@host = http://localhost:8080
+
+### Service metadata
+GET {{host}}/
+Accept: application/json
+
+### Liveness
+GET {{host}}/health/live
+
+### Analyze the challenge dataset
+POST {{host}}/api/v1/anomaly-detection/analyze
+Content-Type: application/json
+
+< ./challenge-request.json
+
+### Analyze approved business context
+POST {{host}}/api/v1/anomaly-detection/analyze
+Content-Type: application/json
+
+< ./business-context-request.json

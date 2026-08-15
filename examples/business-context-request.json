@@ -1,0 +1,21 @@
+{
+  "records": [
+    { "id": 1, "site": "Madrid", "month": "2026-01", "energyKwh": 12000, "co2Kg": 2800 },
+    { "id": 2, "site": "Madrid", "month": "2026-02", "energyKwh": 12500, "co2Kg": 2900 },
+    { "id": 3, "site": "Madrid", "month": "2026-03", "energyKwh": 12800, "co2Kg": 2950 },
+    { "id": 4, "site": "Madrid", "month": "2026-05", "energyKwh": 25000, "co2Kg": 5900 }
+  ],
+  "businessEvents": [
+    {
+      "site": "Madrid",
+      "effectiveFrom": "2026-05",
+      "effectiveTo": "2026-06",
+      "type": "CapacityExpansion",
+      "expectedEnergyMultiplierMin": 1.8,
+      "expectedEnergyMultiplierMax": 2.2,
+      "approved": true,
+      "resetsBaseline": true,
+      "description": "A new production line was commissioned."
+    }
+  ]
+}
