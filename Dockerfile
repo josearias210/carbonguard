@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.7
 
-FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine AS restore
+FROM mcr.microsoft.com/dotnet/sdk:10.0-alpine AS restore
 WORKDIR /src
 
 COPY Directory.Build.props Directory.Packages.props global.json CarbonGuard.sln ./
